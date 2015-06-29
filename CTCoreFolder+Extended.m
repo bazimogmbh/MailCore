@@ -544,8 +544,8 @@ cleanup:    // clean up and return
     }
     
     // Get date from message, extract components, using curent timezone
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSHourCalendarUnit | NSMinuteCalendarUnit |
-				    NSSecondCalendarUnit | NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit | NSTimeZoneCalendarUnit
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitHour | NSCalendarUnitMinute |
+				    NSCalendarUnitSecond | NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitTimeZone
 				    fromDate:[msg senderDate]];
     // build date_time struct from components
     date_time = mailimap_date_time_new([components day], [components month], [components year],
