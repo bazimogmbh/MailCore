@@ -160,6 +160,12 @@ typedef enum {
 - (NSSet *) gmailLabels;
 
 /**
+ Use this method to set both body Plaintext and HTML content.
+ HTML will have higher priority
+ */
+- (void) setHTMLBody:(NSString*)htmlString textBody:(NSString*)plainString;
+
+/**
  A list of attachments this message has
 */
 - (NSArray *)attachments;
