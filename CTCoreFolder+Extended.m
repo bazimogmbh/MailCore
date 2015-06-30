@@ -286,7 +286,7 @@
     clist * fetch_result;
 	
     fetch_type = mailimap_fetch_type_new_fetch_att_list_empty();
-    // Always fetch UID
+    // Fetch ONLY the UID
     fetch_att = mailimap_fetch_att_new_uid();
     r = mailimap_fetch_type_new_fetch_att_list_add(fetch_type, fetch_att);
     if (r != MAILIMAP_NO_ERROR) {
@@ -296,16 +296,6 @@
         return nil;
     }
 	
-    // Always fetch flags
-    fetch_att = mailimap_fetch_att_new_flags();
-    r = mailimap_fetch_type_new_fetch_att_list_add(fetch_type, fetch_att);
-    if (r != MAILIMAP_NO_ERROR) {
-        mailimap_fetch_att_free(fetch_att);
-        mailimap_fetch_type_free(fetch_type);
-        self.lastError = MailCoreCreateErrorFromIMAPCode(r);
-        return nil;
-    }
-    
 	r = mailimap_uid_fetch([self imapSession], set, fetch_type, &fetch_result);
     if (r != MAIL_NO_ERROR) {
         self.lastError = MailCoreCreateErrorFromIMAPCode(r);
