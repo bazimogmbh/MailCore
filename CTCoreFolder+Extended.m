@@ -263,11 +263,7 @@
 	
 }
 
-- (NSArray *) getUidsFromLastUID:(NSUInteger)UID {
-    return [self getUidsFromUID:UID to:0];
-}
-
-- (NSArray *) getUidsFromUID:(NSUInteger)from to:(NSUInteger)to {
+- (NSArray *) getUidsListFrom:(NSUInteger)from to:(NSUInteger)to {
 	
     struct mailimap_set *set = mailimap_set_new_interval(from, to);
 	
@@ -296,7 +292,7 @@
         return nil;
     }
 	
-	r = mailimap_uid_fetch([self imapSession], set, fetch_type, &fetch_result);
+	r = mailimap_fetch([self imapSession], set, fetch_type, &fetch_result);
     if (r != MAIL_NO_ERROR) {
         self.lastError = MailCoreCreateErrorFromIMAPCode(r);
         return nil;
@@ -323,10 +319,6 @@
 	
     clistiter *fetchResultIter = clist_begin(fetch_result);
     for(int i=0; i<len; i++) {
-        struct mailimf_fields * fields = NULL;
-//		struct mailmime * body = NULL;
-
-        struct mailmessage * msg = carray_get(env_list->msg_tab, i);
         struct mailimap_msg_att *msg_att = (struct mailimap_msg_att *)clist_content(fetchResultIter);
         if (msg_att == nil) {
             self.lastError = MailCoreCreateErrorFromIMAPCode(MAIL_ERROR_MEMORY);
@@ -345,15 +337,7 @@
 			return nil;
 		}
 		
-		
-        CTCoreMessage* msgObject = [[CTCoreMessage alloc] initWithMessageStruct:msg];
-        msgObject.parentFolder = self;
-        [msgObject setSequenceNumber:msg_att->att_number];
-        if (fields != NULL) {
-            [msgObject setFields:fields];
-        }
-        [messages addObject:msgObject];
-        [msgObject release];
+        [messages addObject:[NSNumber numberWithInteger:uid]];
 		
         fetchResultIter = clist_next(fetchResultIter);
     }

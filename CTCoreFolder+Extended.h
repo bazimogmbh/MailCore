@@ -14,8 +14,7 @@
 //- (id)initWithPathKeepConnection:(NSString *)path inAccount:(CTCoreAccount *)account;
 - (void) setupTempDir;
 - (NSArray *) messagesFullFrom:(NSUInteger)startUID to:(NSUInteger)endUID;
-- (NSArray *) getUidsFromLastUID:(NSUInteger)UID;
-- (NSArray *) getUidsFromUID:(NSUInteger)from to:(NSUInteger)to;
+- (NSMutableArray *) getUidsListFrom:(NSUInteger)from to:(NSUInteger)to;
 - (NSArray *) getAll_X_Gm_msgIds;
 - (long) appendMessageSeen: (CTCoreMessage *) msg withData: (NSData *)msgData;
 
