@@ -38,6 +38,9 @@
 @interface CTCoreAccount ()
 @end
 
+extern int app_password_required;
+extern int browser_login_required;
+
 
 @implementation CTCoreAccount
 @synthesize lastError, pathDelimiter;
@@ -74,6 +77,9 @@
         login:(NSString *)login password:(NSString *)password {
     int err = 0;
     int imap_cached = 0;
+
+    app_password_required = 0;
+    browser_login_required = 0;
 
     const char* auth_type_to_pass = NULL;
     if(authType == IMAP_AUTH_TYPE_SASL_CRAM_MD5) {
