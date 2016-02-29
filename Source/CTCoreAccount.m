@@ -101,6 +101,9 @@ extern int browser_login_required;
         self.lastError = MailCoreCreateErrorFromIMAPCode(err);
         return NO;
     }
+    
+    struct imap_mailstorage *imap_storage = myStorage->sto_data;
+    imap_storage->imap_auth_type = authType;
 
     err = mailstorage_connect(myStorage);
     if (err == MAIL_ERROR_LOGIN) {
