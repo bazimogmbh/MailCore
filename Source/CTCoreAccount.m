@@ -84,6 +84,8 @@ extern int browser_login_required;
     const char* auth_type_to_pass = NULL;
     if(authType == IMAP_AUTH_TYPE_SASL_CRAM_MD5) {
         auth_type_to_pass = "CRAM-MD5";
+    } else if (authType == IMAP_AUTH_TYPE_SASL_XOAUTH2) {
+        auth_type_to_pass = "xoauth2";
     }
 
     err = imap_mailstorage_init_sasl(myStorage,
