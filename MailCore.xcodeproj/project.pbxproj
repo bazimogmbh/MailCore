@@ -59,9 +59,7 @@
 		F8245A700C041C91005E08A8 /* CTMIMEFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F8245A300C04089D005E08A8 /* CTMIMEFactory.m */; };
 		F8430BB10C72B16000753941 /* CTMIME_Enumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = F8430BAF0C72B16000753941 /* CTMIME_Enumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8430BB20C72B16000753941 /* CTMIME_Enumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F8430BB00C72B16000753941 /* CTMIME_Enumerator.m */; };
-		F8483E4109CE7B9000B80440 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8483E4009CE7B9000B80440 /* libssl.dylib */; };
 		F8483E4309CE7B9C00B80440 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8483E4209CE7B9C00B80440 /* libiconv.dylib */; };
-		F8483E4C09CE7C2800B80440 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8483E4B09CE7C2800B80440 /* libcrypto.dylib */; };
 		F8618D0D10DAE1E600C41188 /* CTSMTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F81B885B0A74AA7100143DF6 /* CTSMTPConnection.m */; };
 		F8618D0E10DAE1E600C41188 /* CTSMTP.m in Sources */ = {isa = PBXBuildFile; fileRef = F88CA0CD0BF7A7B00055AC29 /* CTSMTP.m */; };
 		F8618D0F10DAE1E600C41188 /* CTESMTP.m in Sources */ = {isa = PBXBuildFile; fileRef = F88CA0D30BF7AC0B0055AC29 /* CTESMTP.m */; };
@@ -238,9 +236,7 @@
 		F82D7D430F49279400ADA65C /* CTCoreAccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTCoreAccountTests.m; path = Tests/CTCoreAccountTests.m; sourceTree = "<group>"; };
 		F8430BAF0C72B16000753941 /* CTMIME_Enumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTMIME_Enumerator.h; path = Source/CTMIME_Enumerator.h; sourceTree = "<group>"; };
 		F8430BB00C72B16000753941 /* CTMIME_Enumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTMIME_Enumerator.m; path = Source/CTMIME_Enumerator.m; sourceTree = "<group>"; };
-		F8483E4009CE7B9000B80440 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = /usr/lib/libssl.dylib; sourceTree = "<absolute>"; };
 		F8483E4209CE7B9C00B80440 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = /usr/lib/libiconv.dylib; sourceTree = "<absolute>"; };
-		F8483E4B09CE7C2800B80440 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
 		F8618B5710DADB5C00C41188 /* libmailcore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmailcore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88804610B42018500D400E7 /* libsasl2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsasl2.dylib; path = /usr/lib/libsasl2.dylib; sourceTree = "<absolute>"; };
 		F88804D50B4243C000D400E7 /* MailCoreUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MailCoreUtilities.h; path = Source/MailCoreUtilities.h; sourceTree = SOURCE_ROOT; };
@@ -284,9 +280,7 @@
 				CD016E7017D89F00008F8E36 /* libz.dylib in Frameworks */,
 				CD016E6C17D89EDD008F8E36 /* libetpan.a in Frameworks */,
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
-				F8483E4109CE7B9000B80440 /* libssl.dylib in Frameworks */,
 				F8483E4309CE7B9C00B80440 /* libiconv.dylib in Frameworks */,
-				F8483E4C09CE7C2800B80440 /* libcrypto.dylib in Frameworks */,
 				F88804620B42018500D400E7 /* libsasl2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +395,8 @@
 			children = (
 				F8DFAB0410541708003D3CC1 /* libetpan.framework */,
 				F88804610B42018500D400E7 /* libsasl2.dylib */,
-				F8483E4B09CE7C2800B80440 /* libcrypto.dylib */,
 				F8483E4209CE7B9C00B80440 /* libiconv.dylib */,
 				CD016E6F17D89F00008F8E36 /* libz.dylib */,
-				F8483E4009CE7B9000B80440 /* libssl.dylib */,
 				CD016E7117D89F31008F8E36 /* Security.framework */,
 				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
 			);
@@ -912,6 +904,8 @@
 				OTHER_LDFLAGS = (
 					"-seg1addr",
 					0xb0000000,
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
 				);
 				PRODUCT_NAME = MailCore;
 				SDKROOT = macosx;
@@ -949,6 +943,8 @@
 				OTHER_LDFLAGS = (
 					"-seg1addr",
 					0xb0000000,
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
 				);
 				PRODUCT_NAME = MailCore;
 				SDKROOT = macosx;
@@ -970,7 +966,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "libetpan/build-mac/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = /usr/local/opt/openssl/lib;
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -991,7 +987,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "libetpan/build-mac/include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = /usr/local/opt/openssl/lib;
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
