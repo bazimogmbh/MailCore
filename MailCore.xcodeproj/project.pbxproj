@@ -16,6 +16,33 @@
 		2D538B48119803E2000AB4A2 /* CTSMTPAsyncConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D538B43119803A6000AB4A2 /* CTSMTPAsyncConnection.m */; };
 		6F9DD75716FEAFA200E926F2 /* libetpan_extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F9DD75516FEAFA200E926F2 /* libetpan_extensions.c */; };
 		6F9DD75816FEAFA200E926F2 /* libetpan_extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F9DD75616FEAFA200E926F2 /* libetpan_extensions.h */; };
+		6FA2B8791F1A3BF50036ADC5 /* CTCoreMessage+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = CD34687016C51D8C009C65BB /* CTCoreMessage+Extended.m */; };
+		6FA2B87A1F1A3BF50036ADC5 /* CTCoreAccount+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = CD522D5216C46FDA00423A09 /* CTCoreAccount+Extended.m */; };
+		6FA2B87B1F1A3BF50036ADC5 /* CTCoreFolder+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = CD522D5416C46FDA00423A09 /* CTCoreFolder+Extended.m */; };
+		6FA2B87C1F1A3BF50036ADC5 /* CTSMTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F81B885B0A74AA7100143DF6 /* CTSMTPConnection.m */; };
+		6FA2B87D1F1A3BF50036ADC5 /* CTSMTPAsyncConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D538B43119803A6000AB4A2 /* CTSMTPAsyncConnection.m */; };
+		6FA2B87E1F1A3BF50036ADC5 /* CTSMTP.m in Sources */ = {isa = PBXBuildFile; fileRef = F88CA0CD0BF7A7B00055AC29 /* CTSMTP.m */; };
+		6FA2B87F1F1A3BF50036ADC5 /* CTESMTP.m in Sources */ = {isa = PBXBuildFile; fileRef = F88CA0D30BF7AC0B0055AC29 /* CTESMTP.m */; };
+		6FA2B8801F1A3BF50036ADC5 /* CTMIME_HtmlPart.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EC5B0214C37F60006AF4D3 /* CTMIME_HtmlPart.m */; };
+		6FA2B8811F1A3BF50036ADC5 /* CTMIMEFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F8245A300C04089D005E08A8 /* CTMIMEFactory.m */; };
+		6FA2B8821F1A3BF50036ADC5 /* CTMIME_MessagePart.m in Sources */ = {isa = PBXBuildFile; fileRef = F81A8AD30C03FC3B002F780A /* CTMIME_MessagePart.m */; };
+		6FA2B8831F1A3BF50036ADC5 /* CTMIME_MultiPart.m in Sources */ = {isa = PBXBuildFile; fileRef = F81A8AD50C03FC3B002F780A /* CTMIME_MultiPart.m */; };
+		6FA2B8841F1A3BF50036ADC5 /* CTMIME_SinglePart.m in Sources */ = {isa = PBXBuildFile; fileRef = F81A8AD70C03FC3B002F780A /* CTMIME_SinglePart.m */; };
+		6FA2B8851F1A3BF50036ADC5 /* CTMIME_TextPart.m in Sources */ = {isa = PBXBuildFile; fileRef = F81A8AD90C03FC3B002F780A /* CTMIME_TextPart.m */; };
+		6FA2B8861F1A3BF50036ADC5 /* CTMIME.m in Sources */ = {isa = PBXBuildFile; fileRef = F81A8ADB0C03FC3B002F780A /* CTMIME.m */; };
+		6FA2B8871F1A3BF50036ADC5 /* CTMIME_Enumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F8430BB00C72B16000753941 /* CTMIME_Enumerator.m */; };
+		6FA2B8881F1A3BF50036ADC5 /* CTCoreAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E266D0C6ED4E100B3FBAC /* CTCoreAttachment.m */; };
+		6FA2B8891F1A3BF50036ADC5 /* CTCoreAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = F81B88510A74AA7100143DF6 /* CTCoreAccount.m */; };
+		6FA2B88A1F1A3BF50036ADC5 /* CTCoreAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = F81B88530A74AA7100143DF6 /* CTCoreAddress.m */; };
+		6FA2B88B1F1A3BF50036ADC5 /* CTCoreFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = F81B88550A74AA7100143DF6 /* CTCoreFolder.m */; };
+		6FA2B88C1F1A3BF50036ADC5 /* CTCoreMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F81B88570A74AA7100143DF6 /* CTCoreMessage.m */; };
+		6FA2B88D1F1A3BF50036ADC5 /* CTBareAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = F81E26690C6ED35C00B3FBAC /* CTBareAttachment.m */; };
+		6FA2B88E1F1A3BF50036ADC5 /* CTXlistResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F369D02162DF5030043A3ED /* CTXlistResult.m */; };
+		6FA2B88F1F1A3C0B0036ADC5 /* MailCoreUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F88804D60B4243C000D400E7 /* MailCoreUtilities.m */; };
+		6FA2B8901F1A3C300036ADC5 /* libetpan_extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F9DD75516FEAFA200E926F2 /* libetpan_extensions.c */; };
+		6FA2B8921F1A3C570036ADC5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA2B8911F1A3C570036ADC5 /* Security.framework */; };
+		6FA2B8931F1A3C880036ADC5 /* libetpan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80A104F17A573A50063BCD2 /* libetpan.a */; };
+		6FA2B8991F1A3CC40036ADC5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		AB3AF26F1671B82200BBC48F /* CTXlistResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F369D01162DF5030043A3ED /* CTXlistResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD016E6C17D89EDD008F8E36 /* libetpan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F80A104F17A573A50063BCD2 /* libetpan.a */; };
@@ -126,6 +153,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6FA2B86F1F1A3A940036ADC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F890D38D10CEECD50039817C /* libetpan.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C69AB10910546FE500F32FBD;
+			remoteInfo = "static libetpan";
+		};
 		F80A104E17A573A50063BCD2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F890D38D10CEECD50039817C /* libetpan.xcodeproj */;
@@ -188,6 +222,9 @@
 		2D538B43119803A6000AB4A2 /* CTSMTPAsyncConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTSMTPAsyncConnection.m; path = Source/CTSMTPAsyncConnection.m; sourceTree = SOURCE_ROOT; };
 		6F9DD75516FEAFA200E926F2 /* libetpan_extensions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libetpan_extensions.c; sourceTree = "<group>"; };
 		6F9DD75616FEAFA200E926F2 /* libetpan_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libetpan_extensions.h; sourceTree = "<group>"; };
+		6FA2B8681F1A380E0036ADC5 /* libmailcore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmailcore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA2B8911F1A3C570036ADC5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6FA2B8941F1A3C8E0036ADC5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8DC2EF5B0486A6940098B216 /* MailCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MailCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD016E6F17D89F00008F8E36 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		CD016E7117D89F31008F8E36 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
@@ -272,6 +309,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6FA2B8651F1A380E0036ADC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA2B8991F1A3CC40036ADC5 /* Cocoa.framework in Frameworks */,
+				6FA2B8931F1A3C880036ADC5 /* libetpan.a in Frameworks */,
+				6FA2B8921F1A3C570036ADC5 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF560486A6940098B216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +362,7 @@
 				8DC2EF5B0486A6940098B216 /* MailCore.framework */,
 				F8618B5710DADB5C00C41188 /* libmailcore.a */,
 				F8DFCF4915801A5000C01975 /* Tests.octest */,
+				6FA2B8681F1A380E0036ADC5 /* libmailcore.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -496,6 +544,8 @@
 		F8DFCF4A15801A5000C01975 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FA2B8941F1A3C8E0036ADC5 /* Cocoa.framework */,
+				6FA2B8911F1A3C570036ADC5 /* Security.framework */,
 				F8DFCF4B15801A5000C01975 /* SenTestingKit.framework */,
 				F8DFCF4D15801A5000C01975 /* UIKit.framework */,
 				F8DFCF4F15801A5000C01975 /* Foundation.framework */,
@@ -583,6 +633,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6FA2B8671F1A380E0036ADC5 /* MailCore Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FA2B86E1F1A380E0036ADC5 /* Build configuration list for PBXNativeTarget "MailCore Static" */;
+			buildPhases = (
+				6FA2B8711F1A3AAF0036ADC5 /* ShellScript */,
+				6FA2B8641F1A380E0036ADC5 /* Sources */,
+				6FA2B8651F1A380E0036ADC5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FA2B8701F1A3A940036ADC5 /* PBXTargetDependency */,
+			);
+			name = "MailCore Static";
+			productName = "MailCore Static";
+			productReference = 6FA2B8681F1A380E0036ADC5 /* libmailcore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		8DC2EF4F0486A6940098B216 /* MailCore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "MailCore" */;
@@ -652,6 +720,10 @@
 				LastTestingUpgradeCheck = 0730;
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
+					6FA2B8671F1A380E0036ADC5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					8DC2EF4F0486A6940098B216 = {
 						DevelopmentTeam = 97VA5RA5VY;
 						ProvisioningStyle = Automatic;
@@ -677,6 +749,7 @@
 			projectRoot = ..;
 			targets = (
 				8DC2EF4F0486A6940098B216 /* MailCore */,
+				6FA2B8671F1A380E0036ADC5 /* MailCore Static */,
 				F8618B5610DADB5C00C41188 /* MailCore iOS */,
 				F8DFCF4815801A5000C01975 /* Tests */,
 			);
@@ -728,6 +801,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6FA2B8711F1A3AAF0036ADC5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#python Scripts/BuildScripts/buildopensource.py";
+		};
 		F848422D09CFACA000B80440 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -770,6 +856,37 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6FA2B8641F1A380E0036ADC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA2B8791F1A3BF50036ADC5 /* CTCoreMessage+Extended.m in Sources */,
+				6FA2B87A1F1A3BF50036ADC5 /* CTCoreAccount+Extended.m in Sources */,
+				6FA2B87B1F1A3BF50036ADC5 /* CTCoreFolder+Extended.m in Sources */,
+				6FA2B87C1F1A3BF50036ADC5 /* CTSMTPConnection.m in Sources */,
+				6FA2B87D1F1A3BF50036ADC5 /* CTSMTPAsyncConnection.m in Sources */,
+				6FA2B87E1F1A3BF50036ADC5 /* CTSMTP.m in Sources */,
+				6FA2B87F1F1A3BF50036ADC5 /* CTESMTP.m in Sources */,
+				6FA2B8801F1A3BF50036ADC5 /* CTMIME_HtmlPart.m in Sources */,
+				6FA2B8811F1A3BF50036ADC5 /* CTMIMEFactory.m in Sources */,
+				6FA2B88F1F1A3C0B0036ADC5 /* MailCoreUtilities.m in Sources */,
+				6FA2B8821F1A3BF50036ADC5 /* CTMIME_MessagePart.m in Sources */,
+				6FA2B8831F1A3BF50036ADC5 /* CTMIME_MultiPart.m in Sources */,
+				6FA2B8841F1A3BF50036ADC5 /* CTMIME_SinglePart.m in Sources */,
+				6FA2B8851F1A3BF50036ADC5 /* CTMIME_TextPart.m in Sources */,
+				6FA2B8861F1A3BF50036ADC5 /* CTMIME.m in Sources */,
+				6FA2B8871F1A3BF50036ADC5 /* CTMIME_Enumerator.m in Sources */,
+				6FA2B8881F1A3BF50036ADC5 /* CTCoreAttachment.m in Sources */,
+				6FA2B8891F1A3BF50036ADC5 /* CTCoreAccount.m in Sources */,
+				6FA2B88A1F1A3BF50036ADC5 /* CTCoreAddress.m in Sources */,
+				6FA2B88B1F1A3BF50036ADC5 /* CTCoreFolder.m in Sources */,
+				6FA2B88C1F1A3BF50036ADC5 /* CTCoreMessage.m in Sources */,
+				6FA2B88D1F1A3BF50036ADC5 /* CTBareAttachment.m in Sources */,
+				6FA2B88E1F1A3BF50036ADC5 /* CTXlistResult.m in Sources */,
+				6FA2B8901F1A3C300036ADC5 /* libetpan_extensions.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF540486A6940098B216 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -845,6 +962,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6FA2B8701F1A3A940036ADC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "static libetpan";
+			targetProxy = 6FA2B86F1F1A3A940036ADC5 /* PBXContainerItemProxy */;
+		};
 		F80A105417A573AD0063BCD2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "libetpan ios";
@@ -1006,6 +1128,107 @@
 			};
 			name = Release;
 		};
+		6FA2B8691F1A380E0036ADC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/libetpan/include/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = (
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
+				);
+				PRODUCT_NAME = mailcore;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/libetpan/src/**";
+			};
+			name = Debug;
+		};
+		6FA2B86A1F1A380E0036ADC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/libetpan/include/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					/usr/local/opt/openssl/lib/libssl.a,
+					/usr/local/opt/openssl/lib/libcrypto.a,
+				);
+				PRODUCT_NAME = mailcore;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/libetpan/src/**";
+			};
+			name = Release;
+		};
 		F8618B5810DADB5C00C41188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1134,6 +1357,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6FA2B86E1F1A380E0036ADC5 /* Build configuration list for PBXNativeTarget "MailCore Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FA2B8691F1A380E0036ADC5 /* Debug */,
+				6FA2B86A1F1A380E0036ADC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		F8618B5B10DADB8300C41188 /* Build configuration list for PBXNativeTarget "MailCore iOS" */ = {
 			isa = XCConfigurationList;
